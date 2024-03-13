@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication History Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(110, 231, 250);
+            background-image: url(Photos/bg2.avif);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Increased width */
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+   <u> <h1>Medication History Form</h1></u>
+    <form action="submit.html" method="post">
+        <label for="medication">Medication Name:</label>
+        <input type="text" id="medication" name="medication" required>
+        
+        <label for="dosage">Dosage:</label>
+        <input type="text" id="dosage" name="dosage">
+        
+        <label for="frequency">Frequency:</label>
+        <input type="text" id="frequency" name="frequency">
+        
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date">
+        
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date">
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
